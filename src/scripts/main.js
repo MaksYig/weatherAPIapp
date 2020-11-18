@@ -1,16 +1,14 @@
 "use strict";
-import apiWeatherRequest from './modules/requestWeather';
-// import apiCountryRequest from './modules/requestCountry';
+
 import findByname from "./modules/findbyName";
-import geoLocation from './modules/getGeoLocation';
+import getLocation from "./modules/getGeoLocation";
+import resetData from './modules/resetData';
+
 
 window.addEventListener("DOMContentLoaded", () => {
 
-  // apiWeatherRequest('Athens');  
-  // apiCountryRequest('GR');
-  findByname();
-  geoLocation();
+    findByname();
+    getLocation();
 
-  
-  
+
 });

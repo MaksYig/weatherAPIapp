@@ -6,7 +6,11 @@
     justify-content: center;
 }
 }
-
+@media(max-width:760px){
+  .main__section{
+    height: 100%;
+  }
+}
 @media(max-width:600px){
   .search__wrapper {
     display: flex;
@@ -31,11 +35,28 @@
   font-size: 10px;
   text-align: center;
 }
+.swiper-button-next, .swiper-button-prev{
+display: none;
+}
 }
 
 @media(max-width:450px){
   .main__section {
-    height: 100%;
+    // height: 100%;
     padding-bottom: 20px;
+}
+  .search__form {
+    text-align: center;
+    input{
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 15px;  
+    }
+  }
+  .weather__info-wrapper{
+    margin: 10px auto;
+  }
+  .explain__text {
+    height: 55vh;
 }
 }
